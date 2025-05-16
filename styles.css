@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(#0a0f1e, #000);
+  color: #00ffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00bfff;
+  background: rgba(10, 15, 30, 0.9);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00ffff;
+}
+
+h1 span {
+  color: #00bfff;
+}
+
+.contact a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #00bfff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin: 0.3rem 0;
+  background: #001f2f;
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #00bfff;
+}
+
+.job h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+.github-link svg {
+  vertical-align: middle;
+  margin-right: 4px;
+  transition: transform 0.3s ease;
+}
+
+.github-link:hover svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 4px #00ffff);
+}
+.linkedin-link svg {
+  vertical-align: -2px;
+  margin-right: 4px;
+  transition: transform 0.3s ease;
+}
+
+.linkedin-link:hover svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 4px #00ffff);
+}
+
+a img:hover {
+  filter: drop-shadow(0 0 4px #00ffff);
+}
+
