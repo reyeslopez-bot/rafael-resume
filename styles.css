@@ -159,7 +159,7 @@ img:hover {
 }
 /* 📱 Responsive Layout for Small Screens */
 @media (max-width: 768px) {
-  .body {
+  body {
       font-size: 0.95rem;
   }
 
@@ -183,7 +183,7 @@ img:hover {
   #mode-toggle {
     top: 0.5rem;
     right: 0.5rem;
-    font-size: 1.2rem;
+    font-size: .93rem;
   }
 }
 @media print {
