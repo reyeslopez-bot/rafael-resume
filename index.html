@@ -8,23 +8,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="mode-toggle" aria-label="Toggle light/dark mode"> 
+        <span class="toggle-icon">🌙</span> 
+    </button>
   <div class="container">
     <header>
       <h1>RAFAEL <span>RL</span></h1>
       <p>Full-Stack Developer · QA Specialist</p>
       <div class="contact">
-        <p>
-          📍 Tel Aviv, Israel |
-          <a href="https://wa.me/972542695480" target="_blank" class="whatsapp-link">📞 +972-54-269-5480</a> |
-          <a href="mailto:reyeslopez@mail.tau.ac.il" target="_blank" class="email-link">✉️ reyeslopez@mail.tau.ac.il</a> |
-          <a href="https://github.com/reyeslopez-bot" target="_blank" class="github-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#00ffff">
+            <p>
+            <a 
+          href="https://www.google.com/maps/dir//Florentin,+Tel+Aviv" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="location-link"
+          aria-label="Directions to Florentin, Tel Aviv"
+          >
+          📍 Florentin, Tel Aviv
+          </a> |
+          <a href="https://wa.me/972542695480" 
+            target="_blank" class="whatsapp-link">📞 +972-54-269-5480</a> |
+          <a href="mailto:reyeslopez@mail.tau.ac.il" 
+              target="_blank" 
+              class="email-link">✉️ reyeslopez@mail.tau.ac.il</a> |
+          <a href="https://github.com/reyeslopez-bot" 
+              target="_blank" 
+              class="github-link">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                width="18" 
+                height="18" 
+                viewBox="0 0 24 24" 
+                fill="#00ffff">
               <path d="M12 .5C5.4.5 0 5.9 0 12.4c0 5.2 3.4 9.6 8 11.2.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.6.1-.6.1-.6 1.1.1 1.7 1.1 1.7 1.1 1 .1.5 1.5 1.4 2 .8.5 1.8.4 2.6.3.1-.6.3-1 .6-1.3-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.3 1.1-3.1-.1-.3-.5-1.4.1-3 0 0 .9-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 5.7 18 6 18 6c.6 1.6.2 2.7.1 3 .7.8 1.1 1.8 1.1 3 0 4.6-2.8 5.6-5.4 5.9.4.3.7.9.7 1.8v2.6c0 .3.2.7.8.6 4.6-1.6 8-6 8-11.2C24 5.9 18.6.5 12 .5z"/>
             </svg>
             GitHub
           </a> |
-          <a href="https://linkedin.com/in/rafaeltlv" target="_blank" class="linkedin-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#00ffff">
+          <a href="https://linkedin.com/in/rafaeltlv" 
+              target="_blank" 
+              class="linkedin-link">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                width="18" height="18" 
+                viewBox="0 0 24 24" 
+                fill="#00ffff">
               <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8.24h4V24h-4V8.24zM8.25 8.24h3.7v2.13h.05c.51-.97 1.76-2 3.63-2 3.89 0 4.6 2.56 4.6 5.88V24h-4v-7.91c0-1.89-.03-4.33-2.64-4.33-2.64 0-3.04 2.06-3.04 4.19V24h-4V8.24z"/>
             </svg>
             LinkedIn
@@ -81,7 +106,7 @@
       <p><strong>B.A., Political Science</strong> – Yeshiva University</p>
     </section>
 
-    <section>
+    <section
       <h2>📜 Certifications</h2>
       <ul>
         <li>Full-Stack Web Development Certificate</li>
@@ -91,5 +116,12 @@
 <footer aria-label="Site footer"> <p>© 2025 Rafael R. | Built with HTML & ❤️</p> 
 </footer> 
   </div> <!-- 🌙 Dark/Light Mode Script --> 
-  <script> const toggle = document.getElementById('mode-toggle'); toggle.addEventListener('click', () => { document.body.classList.toggle('light-mode'); }); </script> </body> </html>
+    <script> const toggle = document.getElementById('mode-toggle');
+        const icon = toggle.querySelector('.toggle-icon');
+        toggle.addEventListener('click', () => { document.body.classList.toggle('light-mode');
+            icon.textContent = document.body.classList.contains('light-mode') ? '🌞' : '🌙'; 
+        });
+    </script>
+</body> 
+</html>
 
