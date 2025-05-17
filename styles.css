@@ -12,29 +12,31 @@
 }
 
 #mode-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background-color: var(--main-color);
-  color: #000;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  font-size: 1.2rem;
+  all: unset;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
   font-family: 'Orbitron', sans-serif;
+  background-color: rgba(0, 255, 255, 0.1);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
   cursor: pointer;
-  box-shadow: 0 0 12px var(--box-shadow-color);
-  z-index: 999;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 #mode-toggle:hover {
-  transform: scale(1.1);
-  filter: brightness(1.1);
+  background-color: var(--main-color);
+  color: #000;
 }
 
 body.light-mode #mode-toggle {
-  background-color: #111;
+  background-color: #f0f0f0;
+  border-color: var(--link-color-light);
+  color: var(--link-color-light);
+}
+
+body.light-mode #mode-toggle:hover {
+  background-color: var(--link-color-light);
   color: #fff;
 }
 
@@ -196,4 +198,69 @@ img:hover {
     font-size: 1.2rem;
   }
 }
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
 
+  #mode-toggle,
+  #download-pdf,
+  nav,
+  footer {
+    display: none !important;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: none;
+  }
+
+  .container {
+    box-shadow: none !important;
+    border: none !important;
+    background: white !important;
+  }
+
+  .skills li {
+    background: none !important;
+  }
+
+  .contact svg {
+    display: none;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+}
+.controls button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgba(0, 255, 255, 0.1); /* subtle blue tint for dark mode */
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect (dark mode) */
+.controls button:hover {
+  background-color: var(--main-color);
+  color: #000;
+}
+
+/* Light mode styles */
+body.light-mode .controls button {
+  background-color: #f0f0f0;
+  border-color: var(--link-color-light);
+  color: var(--link-color-light);
+}
+
+body.light-mode .controls button:hover {
+  background-color: var(--link-color-light);
+  color: #fff;
+}
