@@ -16,13 +16,6 @@
   background-color: var(--main-color);
   color: #000;
 }
-body.light-mode {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-body.light-mode {
-  font-size: 17px;
-  line-height: 1.7;
-}
 
 body.light-mode #mode-toggle {
   background-color: #f0f0f0;
@@ -42,6 +35,10 @@ body.light-mode {
   --box-shadow-color: rgba(0, 0, 0, 0.2);
   background: var(--bg-color);
   color: var(--text-color);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  line-height: 1.7;
+
 }
 body.light-mode .container {
   background: rgba(255, 255, 255, 0.9);
